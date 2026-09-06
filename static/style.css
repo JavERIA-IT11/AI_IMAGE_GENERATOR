@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #d8c1b0, #b99b8d);
+    text-align: center;
+    padding: 35px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d2922;
+}
+
+
+h1 {
+    color: #713b2b;
+    font-size: 38px;
+    margin: 10px 0 30px;
+    letter-spacing: 1px;
+}
+
+
+label {
+    display: block;
+    color: #234438;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+input {
+    width: 320px;
+    max-width: 80%;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 2px solid #6d4c41;
+    font-size: 16px;
+    outline: none;
+    background-color: #fffaf7;
+    box-sizing: border-box;
+}
+
+
+input:focus {
+    border-color: #8b4f3d;
+    box-shadow: 0 0 8px rgba(113, 59, 43, 0.25);
+}
+
+
+button {
+    background-color: #713b2b;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #8b4f3d;
+    transform: translateY(-2px);
+}
+
+
+#imagearea {
+    width: 500px;
+    max-width: 90%;
+    min-height: 300px;
+
+    background-color: #fffaf7;
+    border: 2px solid #6d4c41;
+    border-radius: 18px;
+
+    margin: 35px auto 20px;
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+#imagearea img {
+    max-width: 100%;
+    max-height: 500px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+    display: block;
+}
+
+
+.download-button {
+    display: inline-block;
+
+    background-color: #234438;
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.download-button:hover {
+    background-color: #315b4b;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 10px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .input-area {
+        flex-direction: column;
+    }
+
+
+    input {
+        width: 90%;
+        max-width: 90%;
+    }
+
+
+    button {
+        margin-top: 5px;
+    }
+
+
+    #imagearea {
+        width: 95%;
+        min-height: 250px;
+    }
+
+}
