@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>AI Image Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <h1>AI Image Generator</h1>
+
+    <label>Enter your prompt:</label>
+
+    <div class="input-area">
+
+        <input
+            id="prompt"
+            type="text"
+            placeholder="Describe the image you want..."
+        >
+
+        <button id="generatebutton">
+            Generate Image
+        </button>
+
+    </div>
+
+
+    <div id="imagearea">
+
+        <p>Your generated image will appear here</p>
+
+    </div>
+
+
+    <a
+        id="downloadbutton"
+        class="download-button"
+        style="display: none;"
+        download="generated-image.png"
+    >
+        Download Image
+    </a>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
